@@ -1,0 +1,99 @@
+[
+    {
+      "name": "City Commuter",
+      "image": "city_commuter.jpg",
+      "type": "Urban",
+      "price": 899.99,
+      "description": "A comfortable and practical urban commuter bike for daily city commutes.",
+      "category": "Urban"
+    },
+    {
+      "name": "City Explorer Pro",
+      "image": "city_explorer_pro.jpg",
+      "type": "Urban",
+      "price": 1099.99,
+      "description": "An advanced urban bike with enhanced features for exploring the city.",
+      "category": "Urban"
+    },
+    {
+      "name": "Urban Speedster",
+      "image": "urban_speedster.jpg",
+      "type": "Urban",
+      "price": 1199.99,
+      "description": "A sleek and fast urban bike designed for quick rides through the city streets.",
+      "category": "Urban"
+    },
+    {
+      "name": "All-Terrain Cruiser",
+      "image": "all_terrain_cruiser.jpg",
+      "type": "Mountain",
+      "price": 1499.99,
+      "description": "A versatile cruiser bike built for both city streets and rugged mountain trails.",
+      "category": "Mountain"
+    },
+    {
+      "name": "Mountain Explorer",
+      "image": "mountain_explorer.jpg",
+      "type": "Mountain",
+      "price": 1699.99,
+      "description": "An exploration-focused mountain bike designed for conquering challenging trails.",
+      "category": "Mountain"
+    },
+    {
+      "name": "Trail Blaster",
+      "image": "trail_blaster.jpg",
+      "type": "Mountain",
+      "price": 1799.99,
+      "description": "A powerful mountain bike built to blast through any trail obstacles.",
+      "category": "Mountain"
+    },
+    {
+      "name": "Speed Demon",
+      "image": "speed_demon.jpg",
+      "type": "Roadbike",
+      "price": 1599.99,
+      "description": "A high-speed road bike designed for competitive racing and long-distance rides.",
+      "category": "Roadbike"
+    },
+    {
+      "name": "Road Dominator",
+      "image": "road_dominator.jpg",
+      "type": "Roadbike",
+      "price": 1799.99,
+      "description": "A dominant road bike engineered for ultimate performance and control.",
+      "category": "Roadbike"
+    },
+    {
+      "name": "Road Voyager",
+      "image": "road_voyager.jpg",
+      "type": "Roadbike",
+      "price": 1999.99,
+      "description": "An adventurous road bike ready to take on any road journey with ease.",
+      "category": "Roadbike"
+    },
+    {
+      "name": "City Adventurer",
+      "image": "city_adventurer.jpg",
+      "type": "Urban",
+      "price": 999.99,
+      "description": "An adventurous urban bike designed to explore the city's hidden gems.",
+      "category": "Urban"
+    },
+    {
+      "name": "City Sprinter",
+      "image": "city_sprinter.jpg",
+      "type": "Urban",
+      "price": 1299.99,
+      "description": "A speedy urban bike built for sprinting through city traffic with ease.",
+      "category": "Urban"
+    },
+    {
+      "name": "City Trekker",
+      "image": "city_trekker.jpg",
+      "type": "Urban",
+      "price": 999.99,
+      "description": "A versatile urban bike perfect for trekking through urban landscapes and beyond.",
+      "category": "Urban"
+    }
+  ]
+  

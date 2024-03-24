@@ -65,6 +65,38 @@ app.get("/", (req: any, res: { send: (arg0: string) => void; }) => {
 );
 
 
+// import fs from 'fs';
+// import path from 'path';
+// import Bike from "./models/BikeModel";
+
+// // Function to insert bikes into the database
+// const insertBikes = async () => {
+//   try {
+//     // Read the JSON data from the file
+//     const bikesData = fs.readFileSync(path.resolve(__dirname, 'bikes.json'), 'utf8');
+//     const bikes = JSON.parse(bikesData);
+
+//     // Iterate over the JSON data and insert each bike into the database
+//     for (const bikeData of bikes) {
+//       const bike = new Bike(bikeData);
+//       await bike.save();
+//       console.log(`Inserted bike: ${bike.name}`);
+//     }
+
+//     console.log('All bikes inserted successfully!');
+//   } catch (error) {
+//     console.error('Error inserting bikes:', error);
+//   }
+// };
+
+
+
+
+// // Call the function to insert bikes into the database
+// insertBikes();
+
+
+
 
 
 

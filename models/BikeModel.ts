@@ -33,8 +33,8 @@ const bikeSchema: Schema<IBike> = new mongoose.Schema(
       required: true,
     },
     category: {
-      type: String, // Change the type to string
-      required: true, // Ensure that each bike has a category
+      type: String,
+      required: true, 
     },
   },
   {

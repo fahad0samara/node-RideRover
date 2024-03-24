@@ -66,7 +66,7 @@ export const createProduct = async (req: Request, res: Response) => {
     }
 
     // Extract product data from request body
-    const { name, description, price, originalPrice, discountPercentage, flavor, isNewProduct } = req.body;
+    const { name, description, price, category  } = req.body;
 
 
 
@@ -79,10 +79,7 @@ export const createProduct = async (req: Request, res: Response) => {
       description,
       price,
       image: result,
-      originalPrice,
-      discountPercentage,
-      flavor,
-      isNewProduct,
+      category,
 
     });
 
@@ -109,7 +106,14 @@ export const createProduct = async (req: Request, res: Response) => {
 // PUT update a product by ID
 export const updateProductById = async (req: Request, res: Response) => {
   try {
-    const { name, description, price, originalPrice, discountPercentage, isNewProduct, flavor } = req.body;
+    const { 
+      name,
+      description,
+      price,
+      category,
+
+
+     } = req.body;
     let updatedProduct: any;
 
     if (req.file) {
@@ -130,11 +134,9 @@ export const updateProductById = async (req: Request, res: Response) => {
           name,
           description,
           price,
+          category,
           image: imageUri,
-          originalPrice,
-          discountPercentage,
-          flavor,
-          isNewProduct,
+ 
         },
         { new: true }
       );
@@ -146,10 +148,8 @@ export const updateProductById = async (req: Request, res: Response) => {
           name,
           description,
           price,
-          originalPrice,
-          discountPercentage,
-          flavor,
-          isNewProduct,
+          category,
+   
         },
         { new: true }
       );
