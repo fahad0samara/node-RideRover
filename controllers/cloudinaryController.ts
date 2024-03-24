@@ -15,8 +15,8 @@ interface UploadOptions {
 }
 
  export const commonUploadOptions: UploadOptions = {
-  folder: "products/cookies-images",
-  public_id: `coffee-${Date.now()}`,
+  folder: "products/bikes-images",
+  public_id: `bike-image-${Date.now()}`,
   overwrite: true,
 };
 

@@ -1,6 +1,27 @@
 import { Request, Response } from "express";
 import Product from "../models/BikeModel";
 import { commonUploadOptions, handleCloudinaryUpload } from "./cloudinaryController";
+
+// GET all categories
+
+export const getAllCategories = async (req: Request, res: Response) => {
+  try {
+    // Use distinct() method to find unique values of the 'category' field
+    const categories = await Product.distinct("category");
+
+    res.json(categories);
+  } catch (error) {
+    console.error("Error fetching categories:", error);
+    res.status(500).json({
+      error,
+      message: "Internal server error",
+    });
+  }
+};
+
+
+
+
 // GET paginated products
 export const getAllProducts = async (req: Request, res: Response) => {
   const page = parseInt(req.query.page as string) || 1;

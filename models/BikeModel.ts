@@ -4,10 +4,9 @@ import mongoose, { Schema, Document } from "mongoose";
 interface IBike extends Document {
   name: string;
   image: string;
-  type: string;
   price: number;
   description: string;
-  category: string; // Change the type to string
+  category: string;
 }
 
 const bikeSchema: Schema<IBike> = new mongoose.Schema(
@@ -20,10 +19,7 @@ const bikeSchema: Schema<IBike> = new mongoose.Schema(
       type: String,
       required: true,
     },
-    type: {
-      type: String,
-      required: true,
-    },
+
     price: {
       type: Number,
       required: true,

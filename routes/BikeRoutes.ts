@@ -7,12 +7,14 @@ import multer from 'multer';
 const router = express.Router();
 const upload = multer();
 
+// GET all categories
+router.get("/categories", productController.getAllCategories);
+
 // GET all products
 router.get("/", productController.getAllProducts);
 
 // GET a single product by ID
 router.get("/:id", productController.getProductById);
-
 
 
 // POST a new product
