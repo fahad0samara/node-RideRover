@@ -18,6 +18,23 @@ export const getAllCategories = async (req: Request, res: Response) => {
     });
   }
 };
+// GET all products without pagination
+export const getAllProductsNoPagination = async (req: Request, res: Response) => {
+  try {
+    const products = await Product.find(); 
+    res.json({
+      products,
+      totalProducts: products.length,
+    });
+  } catch (error) {
+    console.error('Error fetching products:', error);
+    res.status(500).json({
+      error,
+      message: 'Internal server error',
+    });
+  }
+};
+
 
 
 

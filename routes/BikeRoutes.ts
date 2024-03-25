@@ -1,5 +1,3 @@
-// productRoutes.ts
-
 import express from 'express';
 import * as productController from '../controllers/BikeController';
 import multer from 'multer';
@@ -10,12 +8,14 @@ const upload = multer();
 // GET all categories
 router.get("/categories", productController.getAllCategories);
 
-// GET all products
+// GET all products without pagination
+router.get("/all", productController.getAllProductsNoPagination);
+
+// GET all products (paginated)
 router.get("/", productController.getAllProducts);
 
 // GET a single product by ID
 router.get("/:id", productController.getProductById);
-
 
 // POST a new product
 router.post("/", upload.single("image"), productController.createProduct);

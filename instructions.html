@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Catalog Instructions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #666;
+            margin-bottom: 10px;
+        }
+        ol {
+            margin-top: 20px;
+        }
+        ol li {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .example {
+            margin-top: 30px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .example-title {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .example-data {
+            white-space: pre-wrap;
+            overflow-x: auto;
+        }
+        .example-code {
+            font-family: monospace;
+        }
+        .highlight {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to our Bike Catalog!</h1>
+        <p>Below are the instructions on how to use our catalog:</p>
+        <ol>
+            <li>Explore our wide range of bikes by visiting the <a href="/bikes">Bikes page</a>.</li>
+            <li>To view bikes by category, navigate to the <a href="/bikes/categories">Categories page</a>.</li>
+            <li>To view all bikes without pagination, visit the <a href="/bikes/all">All Bikes page</a>.</li>
+            <li>To view details of a single bike:
+                <ul>
+                    <li>Visit the bike's page by clicking on its name or image from the Bikes page.</li>
+                    <li>The bike's page will display detailed information about the bike.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <div class="example">
+            <h2 class="example-title">Example Bike Data</h2>
+            <div class="example-data">
+                <pre class="example-code">
+{
+  "name": "City Commuter",
+  "image": "city_commuter.jpg",
+  "price": 899.99,
+  "description": "A comfortable and practical urban commuter bike for daily city commutes.",
+  "category": "Urban"
+}
+                </pre>
+            </div>
+            <p>Here is an example of bike data in our catalog:</p>
+            <div class="highlight">
+                <p>Name: City Commuter</p>
+                <p>Description: A comfortable and practical urban commuter bike for daily city commutes.</p>
+                <p>Price: $899.99</p>
+                <p>Category: Urban</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

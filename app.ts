@@ -46,17 +46,8 @@ app.listen(port, () => {
   console.log(`Server started at http://localhost:${port}`);
 });
 
-app.get('/get-user-ip', (req: { ip: any; }, res: { json: (arg0: { userIP: any; }) => void; }) => {
-  const userIP = req.ip
 
-  console.log('User IP:', userIP);
-  
-
-
-  res.json({ userIP });
-});
-
-app.use('/products', BikeRoutes);
+app.use('/bikes', BikeRoutes);
 
 // hello world route
 app.get("/", (req: any, res: { send: (arg0: string) => void; }) => {
