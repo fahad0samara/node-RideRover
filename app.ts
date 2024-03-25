@@ -4,7 +4,7 @@ const helmet = require("helmet");
 const morgan = require("morgan");
 import mongoose from "mongoose";
 import BikeRoutes from './routes/BikeRoutes';
-
+const path = require('path');
 // MongoDB connection string with useNewUrlParser option included
 //fahad0nodejs
 require('dotenv').config();
@@ -49,11 +49,10 @@ app.listen(port, () => {
 
 app.use('/bikes', BikeRoutes);
 
-// hello world route
-app.get("/", (req: any, res: { send: (arg0: string) => void; }) => {
-  res.send("Hello, world!");
-}
-);
+app.get('/', (req: any, res: { sendFile: (arg0: any) => void; }) => {
+  res.sendFile(path.join(__dirname, 'instructions.html'));
+});
+
 
 
 // import fs from 'fs';
