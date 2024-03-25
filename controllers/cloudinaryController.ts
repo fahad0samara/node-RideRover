@@ -31,6 +31,8 @@ export const handleCloudinaryUpload = async (
 
     // Set the unique public_id in the options
     const uniqueOptions = { ...options, public_id: uniquePublicId };
+    console.log("uniqueOptions", uniqueOptions);
+    
 
     const result: UploadApiResponse = await new Promise((resolve, reject) => {
       const uploadStream = cloudinary.uploader.upload_stream(
