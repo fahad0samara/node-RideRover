@@ -1,6 +1,7 @@
 import express from 'express';
 import * as productController from '../controllers/BikeController';
 import multer from 'multer';
+import { searchBikes } from '../controllers/BikeController';
 
 const router = express.Router();
 const upload = multer();
@@ -13,6 +14,10 @@ router.get("/all", productController.getAllProductsNoPagination);
 
 // GET all products (paginated)
 router.get("/", productController.getAllProducts);
+
+//search 
+router.get("/search", searchBikes);
+
 
 // GET a single product by ID
 router.get("/:id", productController.getProductById);

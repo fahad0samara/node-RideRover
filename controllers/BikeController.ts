@@ -73,6 +73,31 @@ export const getAllProducts = async (req: Request, res: Response) => {
 
 
 
+export const searchBikes = async (req: Request, res: Response) => {
+  const searchQuery = req.query.q;
+
+  try {
+    // Perform a search query in your database
+    const searchResults = await Product.find({
+      $or: [
+        { name: { $regex: searchQuery, $options: "i" } }, // Case-insensitive search by name
+        { description: { $regex: searchQuery, $options: "i" } }, // Case-insensitive search by description
+      ],
+    });
+
+    res.json(searchResults);
+  } catch (error) {
+    console.error("Error searching for bikes:", error);
+    res.status(500).json({
+      error,
+      message: "Internal server error",
+    });
+  }
+};
+
+
+
+
 // GET a single product by ID
 export const getProductById = async (req: Request, res: Response) => {
   try {
